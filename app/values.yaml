@@ -1,0 +1,19 @@
+image:
+  repository: docker.io/geowalrus/petclinic
+  tag: 35
+fullnameOverride: petclinic
+replicaCount: 1
+service:
+  port: 8001
+livenessProbe:
+  httpGet:
+    path: /
+    port: http
+readinessProbe:
+  httpGet:
+    path: /
+    port: http
+startupProbe:
+  httpGet:
+    path: /
+    port: http
