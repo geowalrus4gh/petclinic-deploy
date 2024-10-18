@@ -1,6 +1,6 @@
 image:
   repository: docker.io/geowalrus/petclinic
-  tag: ""
+  tag: "3.2.0-SNAPSHOT-66"
 fullnameOverride: petclinic
 replicaCount: 1
 service:
